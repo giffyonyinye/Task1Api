@@ -29,7 +29,7 @@ namespace Task1Api
                     {
                         using (HttpContent content = response.Content)
                         {
-                            string data = content.ReadAsStringAsync().Result;
+                            string data = await content.ReadAsStringAsync();
                             if (data != null)
                             {
                                 var dataObj = JObject.Parse(data);

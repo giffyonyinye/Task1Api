@@ -12,8 +12,8 @@ namespace Task1Api
             while (true)
             {
                 await dogBreeds.FetchAllDogBreeds();
-                //Thread.Sleep(7200000);
-                Thread.Sleep(1000);
+                Thread.Sleep(7200000);
+                //Thread.Sleep(1000);
 
             }
         }
